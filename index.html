@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MySite(version 1.0)</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<script src="maps.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body onload="showCity('Область')">
+	<div class = "all">
+		<div class = "top">
+			This site is a Jonny Taddesky
+		</div>
+
+		<div class = "basis">
+			<img src="image.jpg">
+			<span class = "span1"><a href = "https://www.instagram.com/jonny_taddesky">instagram: jonnytaddesky</a></span>
+			<span class = "span2"><a href = "https://www.facebook.com/profile.php?id=100011100006283.html">facebook: Jonny Taddesky</a></span>
+		</div>
+
+		<div id = "map"></div>
+
+		<div class = "region">
+			<label></label>
+			<select id = "level" onchange="showCity(this.value)" class = "val1">
+				<option value = "Область"">Область</option>
+				<option value = "Киевская">Киевская</option>
+				<option value = "Волынская">Волынская</option>
+				<option value = "Винницкая">Винницкая</option>
+				<option value = "Днепропетровская">Днепропетровская</option>
+				<option value = "Донецкая">Донецкая</option>
+				<option value = "Житомирская">Житомирская</option>
+				<option value = "Закарпатская">Закарпатская</option>
+				<option value = "Запорожская">Запорожская</option>
+				<option value = "Ивано-Франковская">Ивано-Франковская</option>
+				<option value = "Кировоградская">Кировоградская</option>
+				<option value = "Луганская">Луганская</option>
+				<option value = "Львовская">Львовская</option>
+				<option value = "Николаевская">Николаевская</option>
+				<option value = "Одесская">Одесская</option>
+				<option value = "Полтавская">Полтавская</option>
+				<option value = "Ровенская">Ровенская</option>
+				<option value = "Сумская">Сумская</option>
+				<option value = "Тернопольская">Тернопольская</option>
+				<option value = "Харьковская">Харьковская</option>
+				<option value = "Хмельницкая">Хмельницкая</option>
+				<option value = "Черкасская">Черкасская</option>
+				<option value = "Черниговская">Черниговская</option>
+				<option value = "Черновицкая">Черновицкая</option>
+			</select>
+
+			<select id = "names" class = "val2">
+			
+			</select>
+
+			<select id = "street" class = "st">
+				<option value = "Улица">Улица</option>
+				<option value = "Голосеевская">Голосеевская</option>
+				<option value = "Саксаганского">Саксаганского</option>
+				<option value = "Жилянская">Жилянская</option>
+				<option value = "Демеевская">Демеевская</option>
+				<option value = "Ломоносова">Ломоносова</option>
+				<option value = "Васильковская">Васильковская</option>
+			</select>
+
+			<select id = "specialization" class = "spec">
+				<option value = "Специализация">Специализация</option>
+				<option value = "Хирургия">Хирургия</option>
+				<option value = "Травматология">Травматология</option>
+				<option value = "Пульмонология">Пульмонология</option>
+				<option value = "Онкология">Онкология</option>
+				<option value = "Донецкая">Донецкая</option>
+				<option value = "Кардиология">Кардиология</option>
+				<option value = "Гинекология">Гинекология</option>
+				<option value = "Стоматология">Стоматология</option>
+			</select>
+		
+			<label1></label1>
+		
+			<button class = "butt">
+				Поиск
+			</button>			
+		</div>
+	</div>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxANZUe8DuW_gLIAgkf0udwBWefKpZaxg&callback=initMap"></script>
+
+</body>
+</html>

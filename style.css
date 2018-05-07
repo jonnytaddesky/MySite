@@ -1,0 +1,115 @@
+/*Заглавие*/
+.top {
+	color: black;
+	margin: auto;
+	width: 1200px;
+	font-size: 30px;
+	font-family: Colibri;
+	text-align: center;
+	background: teal;
+}
+/*Основа под соцсети*/
+.basis {
+	padding-top: 5px;
+	display: inline-block;
+	position: relative;
+}
+/*Инстаграм*/
+.basis span.span1 a {
+	display: inline-block;
+	position: absolute;
+	top: 162px;
+	left: 3px;
+	color: white;
+	font-family: Arial;
+	font-size: 14px;
+	color: black;
+	background-color: lightsteelblue;
+	padding: 10px 13px;
+}
+/*Фейсбук*/
+.basis span.span2 a {
+	display: inline-block;
+	position: absolute;
+	top: 124px;
+	left: 3px;
+	color: black;
+	background-color: lightsteelblue;
+	font-family: Arial;
+	font-size: 14px;
+	padding: 10px 10px;
+}
+/*Картинка*/
+.basis img {
+	width: 1200px;
+
+}
+/*Размеры картинки которые были изменены*/
+.basis.image {
+	width: 1200px;
+}
+/*Специальный отступ*/
+.region label {
+	margin-left: 20px;
+}
+/*Второй специальный отступ*/
+.region label1 {
+	margin-left: 80px;
+}
+
+select {
+	margin-top: 2px;
+}
+/*Первый селект "Области"*/
+select.val1 {
+	background-color: powderblue;
+	font-size: 22px;
+	width: 200px;
+}
+/*Второй селект "Города"*/
+select.val2 {
+	background-color: powderblue;
+	font-size: 22px;
+	width: 200px ;
+	margin-left: 20px;
+
+}
+/*Третий селект "Специализации"*/
+select.spec {
+	background-color: powderblue;
+	font-size: 22px;
+	width: 200px ;
+	margin-left: 20px;
+
+}
+/*Четвертый селект "Улицы"*/
+select.st {
+	background-color: powderblue;
+	font-size: 22px;
+	width: 200px ;
+	margin-left: 20px;
+}
+
+/*Подлоджка под ВСЁ*/
+.all {
+	width: 1200px; 
+	border-radius: 5px; 
+	opacity: 0.7; 
+	margin: auto;
+	background: #20B2AA;
+}
+/*Подключение гугл карт*/
+#map {
+	 width: 100%;
+     height: 400px;
+     background-color: grey;
+}
+/*Кнопка "Поиска"*/
+.butt {
+	margin-bottom: 2px;
+	color: black;
+	background-color: powderblue;
+	width: 150px;
+	height: 28px;
+}
+
