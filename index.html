@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MySite(version 1.0)</title>
+	<title>MySite</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+	<script src="scriptCity.js"></script>
 	<script src="maps.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
-<body onload="showCity('Область')">
+<body onload="showCity('Область')"; onload="showStreet('Город')">
 	<div class = "all">
 		<div class = "top">
 			This site is a Jonny Taddesky
@@ -49,19 +49,13 @@
 				<option value = "Черниговская">Черниговская</option>
 				<option value = "Черновицкая">Черновицкая</option>
 			</select>
-
-			<select id = "names" class = "val2">
 			
-			</select>
+			<select id = "names" onchange="showStreet(this.value)" class = "val2"></select>
+
+			<label3>ул.</label3>
 
 			<select id = "street" class = "st">
-				<option value = "Улица">Улица</option>
-				<option value = "Голосеевская">Голосеевская</option>
-				<option value = "Саксаганского">Саксаганского</option>
-				<option value = "Жилянская">Жилянская</option>
-				<option value = "Демеевская">Демеевская</option>
-				<option value = "Ломоносова">Ломоносова</option>
-				<option value = "Васильковская">Васильковская</option>
+
 			</select>
 
 			<select id = "specialization" class = "spec">

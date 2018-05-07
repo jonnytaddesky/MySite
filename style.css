@@ -6,7 +6,7 @@
 	font-size: 30px;
 	font-family: Colibri;
 	text-align: center;
-	background: teal;
+	background: gray;
 }
 /*Основа под соцсети*/
 .basis {
@@ -57,6 +57,13 @@
 	margin-left: 80px;
 }
 
+.region label3 {
+	margin-left: 10px;
+	font-size: 22px;
+	color: black;
+	font-family: Arial;
+}
+
 select {
 	margin-top: 2px;
 }
@@ -87,7 +94,7 @@ select.st {
 	background-color: powderblue;
 	font-size: 22px;
 	width: 200px ;
-	margin-left: 20px;
+	
 }
 
 /*Подлоджка под ВСЁ*/
@@ -100,7 +107,8 @@ select.st {
 }
 /*Подключение гугл карт*/
 #map {
-	 width: 100%;
+	 margin-left: 3px;
+	 width: 700px;
      height: 400px;
      background-color: grey;
 }
