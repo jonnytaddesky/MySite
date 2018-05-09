@@ -7,7 +7,7 @@
 	<script src="maps.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
-<body onload="showCity('Область')"; onload="showStreet('Город')">
+<body onload="init('Область')">
 	<div class = "all">
 		<div class = "top">
 			This site is a Jonny Taddesky
@@ -49,8 +49,10 @@
 				<option value = "Черниговская">Черниговская</option>
 				<option value = "Черновицкая">Черновицкая</option>
 			</select>
-			
-			<select id = "names" onchange="showStreet(this.value)" class = "val2"></select>
+
+			<label4>г.</label4>
+
+			<select id = "names" class = "val2" onchange="showStreet(this.value)"></select>
 
 			<label3>ул.</label3>
 
