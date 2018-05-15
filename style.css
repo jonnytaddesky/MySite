@@ -110,10 +110,18 @@ select.st {
 }
 /*Подключение гугл карт*/
 #map {
-	 margin-left: 3px;
-	 width: 700px;
+	 margin-left: 2px;
+	 width: 595px;
      height: 400px;
      background-color: grey;
+}
+
+#pano {
+	margin-top: -400px;
+	left: 602px;
+	width: 595px;
+    height: 400px;
+    background-color: grey;
 }
 /*Кнопка "Поиска"*/
 .butt {

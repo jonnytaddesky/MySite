@@ -19,8 +19,10 @@
 			<a href = "https://www.facebook.com/profile.php?id=100011100006283.html" class="face"><img src="C:\Users\John\Desktop\GitHub\MySite\MySite\image2.jpg" class="image2"></a>
 		</div>
 
-		<div id = "map"></div>
-
+		<div class="maps">
+		<div id = "map"></div> <div id = "pano"></div>
+		</div>
+		
 		<div class = "region">
 			<label></label>
 			<select id = "level" onchange="showCity(this.value)" class = "val1">
@@ -81,6 +83,7 @@
 	</div>
 
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxANZUe8DuW_gLIAgkf0udwBWefKpZaxg&callback=initMap"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script> 
 
 </body>
 </html>
