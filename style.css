@@ -15,29 +15,27 @@
 	position: relative;
 }
 /*Инстаграм*/
-.basis span.span1 a {
+a.insta{
 	display: inline-block;
 	position: absolute;
-	top: 162px;
-	left: 3px;
+	top: 142px;
+	left: 1px;
 	color: white;
 	font-family: Arial;
 	font-size: 14px;
 	color: black;
-	background-color: lightsteelblue;
-	padding: 10px 13px;
+	padding: 5px 5px;
 }
 /*Фейсбук*/
-.basis span.span2 a {
+.face {
 	display: inline-block;
 	position: absolute;
-	top: 124px;
-	left: 3px;
+	top: 142px;
+	left: 56px;
 	color: black;
-	background-color: lightsteelblue;
 	font-family: Arial;
 	font-size: 14px;
-	padding: 10px 10px;
+	padding: 5px 5px;
 }
 /*Картинка*/
 .basis img {
@@ -126,3 +124,12 @@ select.st {
 	height: 28px;
 }
 
+.basis img.image2 {
+	width: 50px;
+	height: 50px;
+}
+
+.basis img.image3 {
+	width: 50px;
+	height: 50px;
+}
