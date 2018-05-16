@@ -1,41 +1,43 @@
 function initMap() {
-	var work = {lat: 50.435932, lng: 30.5205533};
+	var fenway = {
+		lat: 50.43604734,
+		lng: 30.52031672
+	};
 	var map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 16,
-		center: work
-	});
-	var marker = new google.maps.Marker({
-		position: work,
-		map: map
+		center: fenway,
+		zoom: 18
 	});
 	var panorama = new google.maps.StreetViewPanorama(
-            document.getElementById('pano'), {
-              position: work,
-              pov: {
-                heading: 34,
-                pitch: 10
-              }
-            });
-        map.setStreetView(panorama);   
+		document.getElementById('pano'), {
+			position: fenway,
+			pov: {
+				heading: 34,
+				pitch: 10
+			}
+		});
 
-        var settings = {
- 		"async": true,
-  		"crossDomain": true,
-  		"url": "https://eu1.locationiq.org/v1/reverse.php?key=957cabbcaddd76&lat=-37.870662&lon=144.9803321&format=json",
-  		"method": "GET"
-	}
+	var geocoder = new google.maps.Geocoder();
 
-	$.ajax(settings).done(function (response) {
-  	console.log(response);
-	});	
-} 
+	document.getElementById('submit').addEventListener('click', function() {
+		geocodeAddress(geocoder, map);
+	});
+	map.setStreetView(panorama);
+}
 
+function geocodeAddress(geocoder, resultsMap) {
+	var address = document.getElementById('address').value;
 
-
-
-// function findStreet(){
-// 	var str = document.getElementById("geocoding-query").value;
-// 	var re = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
-
-// 	initMap();
-// }
+	geocoder.geocode({
+		'address': address
+	}, function(results, status) {
+		if (status === 'OK') {
+			resultsMap.setCenter(results[0].geometry.location);
+			var marker = new google.maps.Marker({
+				map: resultsMap,
+				position: results[0].geometry.location
+			});
+		} else {
+			alert('Geocode was not successful for the following reason: ' + status);
+		}
+	});
+}

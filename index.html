@@ -7,7 +7,7 @@
 	<script src="maps.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
-<body onload="init('Область')">
+<body onload="initMap('Область')" onload="">
 	<div class = "all">
 		<div class = "top">
 			This site is a Jonny Taddesky
@@ -20,9 +20,10 @@
 		</div>
 
 		<div class="maps">
-		<div id = "map"></div> <div id = "pano"></div>
+		<div id = "map"></div>
+		<div id = "pano"></div>
 		</div>
-		
+  	
 		<div class = "region">
 			<label></label>
 			<select id = "level" onchange="showCity(this.value)" class = "val1">
@@ -57,10 +58,11 @@
 			<select id = "names" class = "val2" onchange="showStreet(this.value)"></select>
 
 			<label3>вул.</label3>
- 
-			<input type="text" id="geocoding-query" value="Назва вулиці" class="street">
+ 		
+			<input id="address" type="textbox" value="Київ" class="street">
+      			
 
-			<!-- <select id = "specialization" class = "spec">
+      		<select id = "specialization" class = "spec">
 				<option value = "Специализация">Специализация</option>
 				<option value = "Хирургия">Хирургия</option>
 				<option value = "Травматология">Травматология</option>
@@ -70,13 +72,9 @@
 				<option value = "Кардиология">Кардиология</option>
 				<option value = "Гинекология">Гинекология</option>
 				<option value = "Стоматология">Стоматология</option>
-			</select> -->
-		
-			<label1></label1>
-		
-			<button id="find" class = "butt" onclick="initMap()">
-				Поиск
-			</button>			
+			</select>		
+
+			<input id="submit" type="button" value="Пошук" class="butt">
 		</div>
 	</div>
 
