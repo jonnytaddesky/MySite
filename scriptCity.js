@@ -37,50 +37,8 @@ function showCity (x) {
 	}
 
 	for (var i = 0; i < mas.length; i++){
-		if (i == 0)
-			showStreet(mas[0]);
 		var opt = document.createElement("option");
 		opt.innerHTML = mas[i];
 		el.appendChild(opt);
-	}
-}
-
-var місто = Array ('Вулиця');
-var Київ = Array ('Голосіївська', 'Саксаганського', 'Жилянська');
-var Луцьк = Array('Потапова', 'Вінниченка', 'Шопена');
-var Вінниця = Array ('Стрілецька', 'Громова', 'Богдана Ступки');
-var Дніпро = Array ('Короленка', 'Воскресінська', 'Глинки');
-var Донецьк = Array ('Кубишева', 'Корнїєнка', 'Лебединського');
-var Житомир = Array ('Пушкінськая', 'Коцюбинського', 'Гоголівськая');
-var Ужгород = Array ('Новака', 'Бокова', 'Швабськая');
-var Запоріжжя = Array ('Яценка', 'Верхня', 'Скельна');
-var ІваноФранківськ = Array ('Вовчинецькая', 'Маланюка', 'Дністровськая');
-var Кропивницький = Array ('Пушкіна', 'Тобілевича', 'Каховська');
-var Луганськ = Array ('Дємєхіна', 'Володарського', 'Шелкового');
-var Львів = Array ('Костомарова', 'Палія', 'Гнатюка');
-var Миколаїв = Array ('Николаев');
-var Одеса = Array ('Одесса');
-var Полтава = Array ('Полтава');
-var Рівне = Array ('Ровно');
-var Суми = Array ('Суммы');
-var Тернопіль = Array ('Тернополь');
-var Харків = Array ('Харьков');
-var Хмельницьк = Array ('Хмельницк');
-var Черкаси = Array ('Черкассы');
-var Чернігів = Array ('Чернигов');
-var Чернівці = Array ('Черновцы');
-
-function showStreet (y) {
-	var st = eval(y);
-	var elem = document.getElementById('street');
-	
-	while (elem.childNodes.length > 0){
-		elem.removeChild(elem.childNodes[elem.childNodes.length - 1]);
-	}
-
-	for (var i = 0; i < st.length; i++){
-		var opto = document.createElement("option");
-		opto.innerHTML = st[i];
-		elem.appendChild(opto);
 	}
 }

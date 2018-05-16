@@ -57,12 +57,10 @@
 			<select id = "names" class = "val2" onchange="showStreet(this.value)"></select>
 
 			<label3>вул.</label3>
+ 
+			<input type="text" id="geocoding-query" value="Назва вулиці" class="street">
 
-			<select id = "street" class = "st">
-
-			</select>
-
-			<select id = "specialization" class = "spec">
+			<!-- <select id = "specialization" class = "spec">
 				<option value = "Специализация">Специализация</option>
 				<option value = "Хирургия">Хирургия</option>
 				<option value = "Травматология">Травматология</option>
@@ -72,11 +70,11 @@
 				<option value = "Кардиология">Кардиология</option>
 				<option value = "Гинекология">Гинекология</option>
 				<option value = "Стоматология">Стоматология</option>
-			</select>
+			</select> -->
 		
 			<label1></label1>
 		
-			<button class = "butt">
+			<button id="find" class = "butt" onclick="initMap()">
 				Поиск
 			</button>			
 		</div>
